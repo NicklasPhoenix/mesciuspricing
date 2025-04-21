@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MESCIUS Pricing & Solutions - Final Demo</title>
+  <title>MESCIUS Pricing & Solutions - Enterprise Tier</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Simple, Powerful Developer Solutions</h1>
-        <p class="paragraph hero-paragraph">Find the perfect toolkit for your development needs. Choose from our popular royalty-free suites or individual components.</p>
+        <p class="paragraph hero-paragraph">Find the perfect toolkit for your development needs. Choose from our popular royalty-free suites, individual components, or contact us for enterprise solutions.</p>
         <a href="#pricing" class="btn hero-btn">View Plans</a>
       </div>
     </section>
@@ -41,8 +41,9 @@
     <div class="container">
       <section id="pricing" class="content-section" aria-labelledby="pricing-heading">
         <h2 id="pricing-heading">Choose Your Plan</h2>
-        <p class="paragraph">Select a suite below to add directly to your quote cart, or configure individual products further down.</p>
-        <div class="tiers">
+        <p class="paragraph">Select a standard plan below, or contact us for custom enterprise solutions.</p>
+        
+        <div class="tiers pricing-tiers">
           <div class="tier fade-in">
             <div class="tier-header"><h3>Community / Lite</h3><div class="tier-description">For individuals & small teams exploring tools.</div><div class="price">$0<sup>/dev·yr</sup></div></div>
             <div class="features"><ul><li>SpreadJS Lite (Feature-limited)</li><li>Wijmo Core Controls</li><li>Community support only</li><li>Eligibility criteria apply*</li><li><i>*Non-commercial / < $1M revenue / < 3 devs</i></li></ul></div>
@@ -64,6 +65,27 @@
             <div class="features"><ul><li>All .NET Platforms (WinForms, WPF, Blazor, etc.)</li><li>Includes Spread.NET</li><li>Includes Wijmo Enterprise</li><li>Data Services</li><li class="royalty-free">Royalty-Free Deployment</li><li>Standard support (1yr)</li><li><i>Note: Also included in Ultimate Suite</i></li></ul></div>
             <div class="tier-footer"><button class="btn add-to-cart-btn" data-item-id="c1-studio" data-item-name="ComponentOne Studio" data-item-price="1495">Add to Quote Cart</button></div>
           </div>
+          
+           <div class="tier tier-enterprise fade-in">
+            <div class="tier-header">
+              <h3>Enterprise / Custom</h3>
+              <div class="tier-description">Tailored solutions for large teams & complex needs.</div>
+              <div class="price price-contact">Contact Sales</div>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Volume Licensing</li>
+                    <li>Custom SLA Options</li>
+                    <li>Dedicated Support Manager</li>
+                    <li>Direct Engineer Access</li>
+                    <li>Bespoke Feature Potential</li>
+                    <li>And much more...</li>
+                </ul>
+            </div>
+            <div class="tier-footer">
+                <a href="#request" class="btn">Contact Sales</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -78,27 +100,29 @@
                            <th>Web Suite Pro</th>
                            <th>Ultimate Suite</th>
                            <th>ComponentOne Studio</th>
+                           <th>Enterprise</th>
                        </tr>
                    </thead>
                    <tbody>
-                       <tr><td>Deployment Model</td><td>Non-Commercial</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr><td>Royalty-Free</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr><td>Support Level</td><td>Community</td><td>Standard</td><td>Premium</td><td>Standard</td></tr>
-                       <tr><td>SpreadJS Engine</td><td>Lite</td><td>Core</td><td>Pro + Addons</td><td class="cross">✖</td></tr>
-                       <tr><td>Wijmo JS Controls</td><td>Core</td><td>Enterprise</td><td>Enterprise</td><td>Enterprise</td></tr>
-                       <tr><td>ActiveReports JS</td><td>Viewer</td><td>Viewer</td><td>Pro + Designer</td><td class="cross">✖</td></tr>
-                       <tr><td>ComponentOne .NET Controls</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr><td>Spread.NET</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr class="feature-row-hidden"><td>ActiveReports .NET</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>SpreadJS PivotTable Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>SpreadJS GanttSheet Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>SpreadJS ReportSheet Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>SpreadJS Designer Component</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>Document Solutions APIs (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>DataViewsJS</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
-                       <tr class="feature-row-hidden"><td>C1 Data Services (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr class="feature-row-hidden"><td>C1 Financial Charts (.NET/JS)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
-                       <tr class="feature-row-hidden"><td>C1 FlexReport Designer (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr><td data-label="Feature">Deployment Model</td><td data-label="Community/Lite">Non-Commercial</td><td data-label="Web Suite Pro" class="check">✔</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="check">✔</td><td data-label="Enterprise">Custom</td></tr>
+                       <tr><td data-label="Feature">Royalty-Free</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="check">✔</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="check">✔</td><td data-label="Enterprise" class="check">✔</td></tr>
+                       <tr><td data-label="Feature">Support Level</td><td data-label="Community/Lite">Community</td><td data-label="Web Suite Pro">Standard</td><td data-label="Ultimate Suite">Premium</td><td data-label="ComponentOne Studio">Standard</td><td data-label="Enterprise">Custom SLA</td></tr>
+                       <tr><td data-label="Feature">SpreadJS Engine</td><td data-label="Community/Lite">Lite</td><td data-label="Web Suite Pro">Core</td><td data-label="Ultimate Suite">Pro + Addons</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr><td data-label="Feature">Wijmo JS Controls</td><td data-label="Community/Lite">Core</td><td data-label="Web Suite Pro">Enterprise</td><td data-label="Ultimate Suite">Enterprise</td><td data-label="ComponentOne Studio">Enterprise</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr><td data-label="Feature">ActiveReports JS</td><td data-label="Community/Lite">Viewer</td><td data-label="Web Suite Pro">Viewer</td><td data-label="Ultimate Suite">Pro + Designer</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr><td data-label="Feature">ComponentOne .NET Controls</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="check">✔</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr><td data-label="Feature">Spread.NET</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="check">✔</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">ActiveReports .NET</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite">Pro</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">SpreadJS PivotTable Add-on</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro">✖</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">SpreadJS GanttSheet Add-on</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro">Optional*</td><td data-label="Ultimate Suite">Optional*</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">SpreadJS ReportSheet Add-on</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro">Optional*</td><td data-label="Ultimate Suite">Optional*</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">SpreadJS Designer Component</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro">Optional*</td><td data-label="Ultimate Suite">Optional*</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">Document Solutions APIs (.NET)</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">DataViewsJS</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro">Optional*</td><td data-label="Ultimate Suite">Optional*</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise">As Needed</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">C1 Data Services (.NET)</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="check">✔</td><td data-label="ComponentOne Studio" class="check">✔</td><td data-label="Enterprise">As Needed</td></tr>
+                        <tr class="feature-row-hidden"><td data-label="Feature">Volume Licensing</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="cross">✖</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise" class="check">✔</td></tr>
+                       <tr class="feature-row-hidden"><td data-label="Feature">Dedicated Account Manager</td><td data-label="Community/Lite" class="cross">✖</td><td data-label="Web Suite Pro" class="cross">✖</td><td data-label="Ultimate Suite" class="cross">✖</td><td data-label="ComponentOne Studio" class="cross">✖</td><td data-label="Enterprise" class="check">✔</td></tr>
+
                    </tbody>
                </table>
                <p class="footnote">*Optional indicates feature can be added via the individual product configuration.</p>
@@ -141,7 +165,7 @@
       <section id="request" class="content-section request-section-wrapper" aria-labelledby="request-heading">
          <div class="request-section fade-in">
              <h2 id="request-heading">Request General Information or Consultation</h2>
-             <p class="paragraph" style="font-size:1rem; margin-bottom: 2rem;">Use this form if you need consultation, volume discounts, or have general questions not covered by the plans above.</p>
+             <p class="paragraph" style="font-size:1rem; margin-bottom: 2rem;">Use this form if you need consultation, volume discounts, Document Solutions pricing, or have general questions not covered by the plans above.</p>
              <form id="quote-form">
                  <fieldset class="product-selection">
                      <legend>Select Products/Suites of General Interest:</legend>
@@ -156,6 +180,7 @@
                          <label><input type="checkbox" name="interest" value="ActiveReportsNET"> ActiveReports .NET</label>
                          <label><input type="checkbox" name="interest" value="DocumentAPIs"> Document Solutions APIs</label>
                          <label><input type="checkbox" name="interest" value="DataViewsJS"> DataViewsJS</label>
+                         <label><input type="checkbox" name="interest" value="Enterprise"> Enterprise / Custom</label>
                          <label><input type="checkbox" name="interest" value="Unsure"> Unsure / Need Consultation</label>
                      </div>
                  </fieldset>
