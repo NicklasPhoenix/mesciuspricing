@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MESCIUS Pricing & Solutions - Final Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+      <div class="brand">
+        <img src="https://cdn.mescius.io/umb/media/pujnxfci/mescuis-logo-horiz.svg" alt="MESCIUS Logo">
+      </div>
+      <div class="nav-links">
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#compare-features" class="nav-link">Compare</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#request" class="nav-link">Quote</a>
+      </div>
+      <div id="cart-icon" class="cart-icon-container" title="View Quote Cart" tabindex="0" aria-label="View Quote Cart">
+        🛒
+        <span id="cart-count" class="cart-count-badge" style="display: none;">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Simple, Powerful Developer Solutions</h1>
+        <p class="paragraph hero-paragraph">Find the perfect toolkit for your development needs. Choose from our popular royalty-free suites or individual components.</p>
+        <a href="#pricing" class="btn hero-btn">View Plans</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="pricing" class="content-section" aria-labelledby="pricing-heading">
+        <h2 id="pricing-heading">Choose Your Plan</h2>
+        <p class="paragraph">Select a suite below to add directly to your quote cart, or configure individual products further down.</p>
+        <div class="tiers">
+          <div class="tier fade-in">
+            <div class="tier-header"><h3>Community / Lite</h3><div class="tier-description">For individuals & small teams exploring tools.</div><div class="price">$0<sup>/dev·yr</sup></div></div>
+            <div class="features"><ul><li>SpreadJS Lite (Feature-limited)</li><li>Wijmo Core Controls</li><li>Community support only</li><li>Eligibility criteria apply*</li><li><i>*Non-commercial / < $1M revenue / < 3 devs</i></li></ul></div>
+            <div class="tier-footer"><a href="#request" class="btn btn-secondary">Learn More</a></div>
+          </div>
+          <div class="tier fade-in">
+             <div class="tier-header"><h3>Web Suite Pro</h3><div class="tier-description">Essential suite for modern web app development.</div><div class="price">$2,199<sup>/dev·yr</sup></div></div>
+             <div class="features"><ul><li>SpreadJS (Core Engine)</li><li>Wijmo Enterprise</li><li>ActiveReports JS Viewer</li><li class="royalty-free">Royalty-Free Deployment</li><li>Standard support (1yr)</li></ul></div>
+             <div class="tier-footer"><button class="btn add-to-cart-btn" data-item-id="web-suite-pro" data-item-name="Web Suite Pro" data-item-price="2199">Add to Quote Cart</button></div>
+         </div>
+          <div class="tier tier-highlighted fade-in">
+             <div class="popular-badge">Best Value</div>
+             <div class="tier-header"><h3>Ultimate Suite</h3><div class="tier-description">Comprehensive toolkit for enterprise web & desktop apps.</div><div class="price">$3,299<sup>/dev·yr</sup></div></div>
+             <div class="features"><ul><li>All Web Suite Pro features</li><li>SpreadJS Pro (incl. PivotTable)</li><li>ActiveReports JS Pro (incl. Designer)</li><li>ActiveReports .NET Pro</li><li>Document APIs (.NET Excel/PDF/Word/Imaging)</li><li>**ComponentOne Studio Included**</li><li class="royalty-free">Royalty-Free Deployment</li><li>Premium support (1yr)</li></ul></div>
+             <div class="tier-footer"><button class="btn add-to-cart-btn" data-item-id="ultimate-suite" data-item-name="Ultimate Suite" data-item-price="3299">Add to Quote Cart</button></div>
+           </div>
+          <div class="tier fade-in">
+            <div class="tier-header"><h3>ComponentOne Studio</h3><div class="tier-description">Extensive UI controls primarily for .NET platforms.</div><div class="price">$1,495<sup>/dev·yr</sup></div></div>
+            <div class="features"><ul><li>All .NET Platforms (WinForms, WPF, Blazor, etc.)</li><li>Includes Spread.NET</li><li>Includes Wijmo Enterprise</li><li>Data Services</li><li class="royalty-free">Royalty-Free Deployment</li><li>Standard support (1yr)</li><li><i>Note: Also included in Ultimate Suite</i></li></ul></div>
+            <div class="tier-footer"><button class="btn add-to-cart-btn" data-item-id="c1-studio" data-item-name="ComponentOne Studio" data-item-price="1495">Add to Quote Cart</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="compare-features" class="content-section" aria-labelledby="compare-heading">
+           <h2 id="compare-heading">Compare Plan Features</h2>
+           <div class="comparison-table-wrapper">
+               <table class="comparison-table">
+                   <thead>
+                       <tr>
+                           <th>Feature</th>
+                           <th>Community/Lite</th>
+                           <th>Web Suite Pro</th>
+                           <th>Ultimate Suite</th>
+                           <th>ComponentOne Studio</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr><td>Deployment Model</td><td>Non-Commercial</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr><td>Royalty-Free</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr><td>Support Level</td><td>Community</td><td>Standard</td><td>Premium</td><td>Standard</td></tr>
+                       <tr><td>SpreadJS Engine</td><td>Lite</td><td>Core</td><td>Pro + Addons</td><td class="cross">✖</td></tr>
+                       <tr><td>Wijmo JS Controls</td><td>Core</td><td>Enterprise</td><td>Enterprise</td><td>Enterprise</td></tr>
+                       <tr><td>ActiveReports JS</td><td>Viewer</td><td>Viewer</td><td>Pro + Designer</td><td class="cross">✖</td></tr>
+                       <tr><td>ComponentOne .NET Controls</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr><td>Spread.NET</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr class="feature-row-hidden"><td>ActiveReports .NET</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>SpreadJS PivotTable Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>SpreadJS GanttSheet Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>SpreadJS ReportSheet Add-on</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>SpreadJS Designer Component</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>Document Solutions APIs (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>DataViewsJS</td><td class="cross">✖</td><td>Optional*</td><td class="check">✔</td><td class="cross">✖</td></tr>
+                       <tr class="feature-row-hidden"><td>C1 Data Services (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr class="feature-row-hidden"><td>C1 Financial Charts (.NET/JS)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                       <tr class="feature-row-hidden"><td>C1 FlexReport Designer (.NET)</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td></tr>
+                   </tbody>
+               </table>
+               <p class="footnote">*Optional indicates feature can be added via the individual product configuration.</p>
+           </div>
+           <div class="toggle-features-container">
+               <button id="toggle-features-btn" class="btn btn-secondary">Show Full Comparison</button>
+           </div>
+       </section>
+
+
+      <section id="products" class="content-section" aria-labelledby="products-heading">
+        <h2 id="products-heading">Individual Products</h2>
+        <p class="paragraph">Need just one specific component? Click to configure add-ons or add directly to quote cart.</p>
+        <div class="tiers individual-products">
+           <div class="tier fade-in product-card" data-product-name="SpreadJS Pro" data-base-price="1499" tabindex="0" aria-label="Configure SpreadJS Pro">
+             <div class="tier-header"><h3>SpreadJS Pro</h3><div class="price">$1,499<sup>/dev·yr</sup></div></div>
+            </div>
+           <div class="tier fade-in product-card" data-product-name="Spread.NET Pro" data-base-price="1499" tabindex="0" aria-label="Configure Spread.NET Pro">
+             <div class="tier-header"><h3>Spread.NET Pro</h3><div class="price">$1,499<sup>/dev·yr</sup></div></div>
+           </div>
+           <div class="tier fade-in product-card" data-product-name="Wijmo Enterprise" data-base-price="599" tabindex="0" aria-label="Configure Wijmo Enterprise">
+             <div class="tier-header"><h3>Wijmo Enterprise</h3><div class="price">$599<sup>/dev·yr</sup></div></div>
+           </div>
+           <div class="tier fade-in product-card" data-product-name="ActiveReports JS Pro" data-base-price="1999" tabindex="0" aria-label="Configure ActiveReports JS Pro">
+             <div class="tier-header"><h3>ActiveReports JS Pro</h3><div class="price">$1,999<sup>/dev·yr</sup></div></div>
+             </div>
+           <div class="tier fade-in product-card" data-product-name="ActiveReports .NET Pro" data-base-price="1599" tabindex="0" aria-label="Configure ActiveReports .NET Pro">
+             <div class="tier-header"><h3>ActiveReports .NET Pro</h3><div class="price">$1,599<sup>/dev·yr</sup></div></div>
+             </div>
+            <div class="tier fade-in product-card" data-product-name="DataViewsJS" data-base-price="799" tabindex="0" aria-label="Configure DataViewsJS">
+             <div class="tier-header"><h3>DataViewsJS</h3><div class="price">$799<sup>/dev·yr</sup></div></div>
+            </div>
+             <div class="tier fade-in product-card" data-product-name="Document Solutions .NET Bundle" data-base-price="999" tabindex="0" aria-label="Configure Document Solutions .NET Bundle">
+                <div class="tier-header"><h3>Document Solutions</h3><div class="price">From $999<sup>/dev·yr</sup></div></div>
+                 <p class="product-note">(.NET APIs: Excel, PDF, Word, Imaging)</p>
+            </div>
+        </div>
+      </section>
+
+      <section id="request" class="content-section request-section-wrapper" aria-labelledby="request-heading">
+         <div class="request-section fade-in">
+             <h2 id="request-heading">Request General Information or Consultation</h2>
+             <p class="paragraph" style="font-size:1rem; margin-bottom: 2rem;">Use this form if you need consultation, volume discounts, or have general questions not covered by the plans above.</p>
+             <form id="quote-form">
+                 <fieldset class="product-selection">
+                     <legend>Select Products/Suites of General Interest:</legend>
+                     <div class="checkbox-grid">
+                         <label><input type="checkbox" name="interest" value="WebSuitePro"> Web Suite Pro</label>
+                         <label><input type="checkbox" name="interest" value="UltimateSuite"> Ultimate Suite</label>
+                         <label><input type="checkbox" name="interest" value="ComponentOne"> ComponentOne Studio</label>
+                         <label><input type="checkbox" name="interest" value="SpreadJS"> SpreadJS</label>
+                         <label><input type="checkbox" name="interest" value="Spread.NET"> Spread.NET</label>
+                         <label><input type="checkbox" name="interest" value="Wijmo"> Wijmo</label>
+                         <label><input type="checkbox" name="interest" value="ActiveReportsJS"> ActiveReports JS</label>
+                         <label><input type="checkbox" name="interest" value="ActiveReportsNET"> ActiveReports .NET</label>
+                         <label><input type="checkbox" name="interest" value="DocumentAPIs"> Document Solutions APIs</label>
+                         <label><input type="checkbox" name="interest" value="DataViewsJS"> DataViewsJS</label>
+                         <label><input type="checkbox" name="interest" value="Unsure"> Unsure / Need Consultation</label>
+                     </div>
+                 </fieldset>
+                 <div class="form-row">
+                     <div class="form-group"><label for="rq_name">Your Name</label><input type="text" id="rq_name" placeholder="e.g., Jane Doe" required></div>
+                     <div class="form-group"><label for="rq_email">Work Email</label><input type="email" id="rq_email" placeholder="e.g., jane.doe@company.com" required></div>
+                 </div>
+                 <div class="form-group full-width"><label for="rq_details">Project Details / Questions</label><textarea id="rq_details" placeholder="Tell us briefly about your project, team size, or specific questions..." rows="4" required></textarea></div>
+                 <div class="submit-area"><button type="submit" class="btn">Submit General Inquiry</button></div>
+             </form>
+         </div>
+       </section>
+    </div>
+
+  </main>
+
+  <footer>
+       Copyright © 2025 MESCIUS inc. All rights reserved.
+       <div class="footer-links">
+         <a href="#" class="footer-link">Privacy Policy</a> |
+         <a href="#" class="footer-link">Terms of Service</a> |
+         <a href="#" class="footer-link">Contact Us</a>
+       </div>
+  </footer>
+
+  {/* Add-on Modal Structure */}
+  <div id="addon-modal" class="modal-overlay">
+      <div class="modal-content">
+          <button class="modal-close-btn" aria-label="Close configuration">&times;</button>
+          <h3 id="addon-product-name">Configure Product</h3>
+          <p>Base Price: <strong id="addon-base-price">$0</strong> /dev/yr</p>
+          <hr>
+          <div id="feature-addons"><h4>Feature Add-ons</h4><p><small>Select desired features below.</small></p></div>
+          <hr>
+          <div id="support-addons">
+              <h4>Support Plan</h4>
+              <label class="radio-label"><input type="radio" name="support-level" value="0" data-name="Standard Support (Included)" checked> Standard (1yr Updates, Forum/Ticket Support) - Included</label>
+              <label class="radio-label"><input type="radio" name="support-level" value="299" data-name="Premium Support"> Premium (+ $299/dev/yr) - Faster Response (24h target), Phone Assist</label>
+              <label class="radio-label"><input type="radio" name="support-level" value="599" data-name="Enterprise Support"> Enterprise (+ $599/dev/yr) - Priority Response (8h target), Named Contact Option</label>
+          </div>
+          <hr>
+          <div class="total-price-section"><strong>Total Estimated Price:</strong> <strong id="addon-total-price">$0</strong> /dev/yr</div>
+          <button id="modal-add-to-cart-btn" class="btn add-to-cart-btn">Add Configuration to Quote Cart</button>
+      </div>
+  </div>
+
+  {/* Cart Sidebar Structure */}
+  <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header"><h3>Quote Cart</h3><button id="cart-close-btn" class="cart-close-btn" aria-label="Close cart">&times;</button></div>
+      <div id="cart-items" class="cart-items-container"><p class="cart-empty-message">Your quote cart is empty.</p></div>
+      <div class="cart-footer">
+          <div class="cart-total"><strong>Total:</strong> <strong id="cart-total-price">$0.00</strong></div>
+          <button id="cart-checkout-btn" class="btn cart-quote-btn disabled">Get Quote / Checkout</button>
+          <p class="cart-note"><small>Clicking above will finalize the items in your cart for a specific quote or checkout link generation.</small></p>
+      </div>
+  </div>
+
+   {/* Submission Confirmation Modal */}
+   <div id="submission-confirmation" class="modal-overlay">
+       <div class="modal-content">
+           <button class="modal-close-btn" aria-label="Close confirmation">&times;</button>
+           <h3>Quote Request Submitted (Demo)</h3>
+           <p>Thank you! The following items have been submitted for your quote request. A representative will be in touch, or you would be redirected to checkout (e.g., Cleverbridge) in a real scenario.</p>
+           <div id="confirmation-items" class="confirmation-items-list">
+           </div>
+           <hr>
+            <div class="confirmation-total">
+               <strong>Total Estimated Value:</strong>
+               <strong id="confirmation-total-price">$0.00</strong>
+           </div>
+           <button class="btn modal-close-btn">Close</button>
+       </div>
+   </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
